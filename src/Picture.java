@@ -312,7 +312,7 @@ public class Picture
 				Point A2 = hStats[j][0];
 				Point B2 = hStats[j][1];
 				
-				if (isParellel (A1, A2, B1, B2))
+				if (isParallel (A1, A2, B1, B2))
 					yPars++;		// Found another parellel line
 			}
 		}
@@ -338,7 +338,7 @@ public class Picture
 				Point A2 = vStats[j][0];
 				Point B2 = vStats[j][1];
 				
-				if (isParellel (A1, A2, B1, B2))
+				if (isParallel (A1, A2, B1, B2))
 					xPars++;
 			}
 		}
@@ -365,7 +365,7 @@ public class Picture
 	 * @return true if the slope of A1 to A2 is equal to the slope of
 			B1 to B2, false otherwise
      */
-	public boolean isParellel (Point A1, Point A2, Point B1, Point B2)
+	public boolean isParallel (Point A1, Point A2, Point B1, Point B2)
 	{
 		int A = Math.abs((A2.y-A1.y) * (B2.x-B1.x));	// Do not use division
 		int B = Math.abs((A2.x-A1.x) * (B2.y-B1.y));	// Instead, cross-multiply

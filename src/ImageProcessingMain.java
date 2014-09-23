@@ -9,13 +9,20 @@ import java.util.LinkedList;
 
 /**
  * Processes an image
- * @author G Ridout and ...
+ * @author G Ridout
+ * @author Jerry Yu
  * @version October 2012
  */
 public class ImageProcessingMain extends JFrame
 {
-	final private String []FILE_NAMES={"", "shapes.png", "morerectangles.png", "hardshapes.png", 										"waterlilies.png", "uber.png", "ultra.png"};
-	final private String DEFAULT_FILE_NAME = FILE_NAMES[5];
+	final private String []FILE_NAMES = {
+		"../res/shapes.png",
+		"../res/morerectangles.png",
+		"../res/hardshapes.png",
+		"../res/waterlilies.png",
+		"../res/uber.png",
+		"../res/ultra.png"};
+	final private String DEFAULT_FILE_NAME = FILE_NAMES[4];
 	
 	// The main drawing area
 	private PicturePanel pictureArea;
@@ -34,7 +41,7 @@ public class ImageProcessingMain extends JFrame
 	public ImageProcessingMain()
 	{
 		// Set up the main window and the panel for the Picture
-		setTitle("Image Processing Demo");
+		setTitle("Image processing with shape detection");
 		setLocation(250, 20);
 		setLayout(new BorderLayout());
 		
